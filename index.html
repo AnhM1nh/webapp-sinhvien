@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sinh Viên </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="renderListStudent()">
+    <div class="wrapper">
+        <!-- FORM STUDENT -->
+        <div class="form-student">
+            <div class="student">
+                <h3>Quản lý sinh viên</h3>
+                <label>Họ và tên: </label>
+                <input type="text" id='fullname'/>
+                <span id="fullname-error" class="error"></span>
+                <br/>
+
+                <label>Tuổi:</label>
+                <input type="text" id='age'/>
+                <br/>
+
+                <label>Quê quán: </label>
+                <input type="text" id='place'/>
+                <br/>
+
+                <label>Điểm: </label>
+                <input type="text" id='point'/>
+                <br/>
+
+                <label>Giới tính:</label>
+                <input name="gender" type="radio" id="male" value="1" />Nam
+                <input name="gender" type="radio" id="famale" value="2" />Nữ
+                <br/>
+                
+                <input type="hidden" id="index"/>
+                
+            </div>
+            <label>&nbsp;</label>
+            <button onclick="save()">SAVE</button>
+            <button onclick="update()" class="edit" id="update">UPDATE</button>
+        </div> 
+
+        <!-- SAVE STUDENT -->
+        <div class="list-student grid-student">
+            <h3>Danh sách sinh viên</h3>
+            <table id="grid-students" id="render">
+                <div id="result"></div>
+            </table>
+            
+</div>
+    </div> <!-- End wrapper -->
+    <script src= "./student.js"></script>
+</body>
+</html>
