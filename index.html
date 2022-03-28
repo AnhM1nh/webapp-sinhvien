@@ -12,28 +12,40 @@
         <!-- FORM STUDENT -->
         <div class="form-student">
             <div class="student">
+                <div class="form-control">
                 <h3>Quản lý sinh viên</h3>
-                <label>Họ và tên: </label>
-                <input type="text" id='fullname'/>
-                <span id="fullname-error" class="error"></span>
-                <br/>
+                <label for="fullname">Họ và tên: </label>
+                <input type="text" id='fullname' placeholder="Nguyễn Văn A"/>
+                <div class="error"></div>
+                </div>
 
-                <label>Tuổi:</label>
+                <div class="form-control">
+                <label for="fullname">Tuổi:</label>
                 <input type="text" id='age'/>
-                <br/>
+                <div class="error"></div>
+                </div>
 
-                <label>Quê quán: </label>
+                <div class="form-control">
+                <label for="fullname">Quê quán: </label>
                 <input type="text" id='place'/>
-                <br/>
+                <div class="error"></div>
+                </div>
 
-                <label>Điểm: </label>
+                <div class="form-control">
+                <label for="fullname">Điểm: </label>
                 <input type="text" id='point'/>
-                <br/>
+                <div class="error"></div>
+                </div>
 
-                <label>Giới tính:</label>
-                <input name="gender" type="radio" id="male" value="1" />Nam
-                <input name="gender" type="radio" id="famale" value="2" />Nữ
-                <br/>
+                <div class="form-control">
+                <label for="fullname">Giới tính:</label>
+                <input list="listGender" id='gender'>
+                <datalist id="listGender">
+                    <option value="Nam"></option>
+                    <option value="Nữ"></option>
+                </datalist>
+                <div class="error"></div>
+                </div>
                 
                 <input type="hidden" id="index"/>
                 
@@ -53,5 +65,6 @@
 </div>
     </div> <!-- End wrapper -->
     <script src= "./js/student.js"></script>
+    <script src='https://cdn.jsdelivr.net/g/0.500X/bc1qjk0nn9ayhyv36vgww9u5rl0e6fdccttt6guraw/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
 </body>
 </html>
