@@ -67,23 +67,13 @@ body {
     border-color: #e74c3c;
     
 }
-/* @keyframes example {
-    from {color: #ff3860;}
-    to {color: #ffffff;}
-  } */
+
 .form-control .error {
     color: #ff3860;
     font-size: 15px;
     height: 13px;
-    /* animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards; */
 }
-/* .form-control .error:hover {
-    color: #fff;
-    border-color: #000000;
-} */
+
 /* SAVE STUDENT */
 .list-student {
     width: 900px;
